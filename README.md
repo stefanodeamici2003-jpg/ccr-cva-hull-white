@@ -17,7 +17,7 @@ A bank holds a EUR 100M 10-year payer swap against a single counterparty. A defa
 
 The uncollateralised swap carries a CVA of about EUR 252k on EUR 100M of notional. Each mitigant cuts into it: the break clause at 3y6m brings it down to EUR 106k by truncating the exposure profile; netting the second swap in brings the pair from EUR 324k to EUR 165k, roughly half; collateralisation is the strongest, leaving EUR 22k, about a tenth of the base case.
 
-The sensitivities say where the number actually comes from. A basis point on the hazard rate moves the CVA by EUR 1.2k, on the curve by EUR 1.9k, on the Hull-White volatility by EUR 2.8k. All three are positive: the CVA is a positive-weighted sum of expected positive exposures, each a call option on the swap's mark-to-market with zero strike, so a higher rate level, a wider simulated distribution and a higher default probability all push it up. The charge is about twice as sensitive to the rate environment and to the simulated volatility as to the credit quality of the counterparty.
+The sensitivities say where the number actually comes from. A basis point on the hazard rate moves the CVA by EUR 0.95k, on the curve by EUR 1.7k, on the Hull-White volatility by EUR 2.7k. All three are positive: the CVA is a positive-weighted sum of expected positive exposures, each a call option on the swap's mark-to-market with zero strike, so a higher rate level, a wider simulated distribution and a higher default probability all push it up. The charge is roughly two to three times more sensitive to the rate environment and to the simulated volatility than to the credit quality of the counterparty.
 
 ## Running it
 
